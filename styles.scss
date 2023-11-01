@@ -1,0 +1,291 @@
+$header-bg-color:#141617;
+$white:#fff;
+$navbar-bg-color:#0f0e0e;
+$blue:#3498db;
+$form-control-bg-color:#2ecc71;
+$card-body-bg-color:#86cab4;
+$section-about-bg-color: #1d7a5d;
+$contact-bg-color: #288064 ;
+$footer-color:#333;
+
+*{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+// <!-- Header -->
+#header {
+  background-color: $header-bg-color ;
+  color: $white;
+  text-align: center;
+}
+#header {
+  img {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+// Navigation Menu
+
+.navbar {
+  &.navbar-expand-lg {
+    background-color: $navbar-bg-color !important;
+  }
+
+  .navbar-toggler {
+    border-color: $white;
+    .navbar-toggler-icon {
+      color: $white;
+      background-color: $white;
+      border-radius: 10px;
+      padding: 15px;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $white;
+
+        &.active {
+          color: $blue ;
+        }
+      }
+    }
+  }
+
+  .form-control {
+    background-color: $form-control-bg-color ;
+    color: $white;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  .btn-outline-success {
+    border-color: $blue;
+    color: $blue;
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+}
+
+// Home Section
+#home {
+  background-color: $white;
+  padding: 20px;
+}
+#home {
+  h2 {
+    font-size: 24px;
+  }
+}
+#home {
+  p {
+    font-size: 16px;
+  }
+}
+
+// Image Gallery for Home
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+// menu section
+#menu {
+  background-color: $white;
+  padding: 20px;
+}
+#menu {
+  h2 {
+    font-size: 24px;
+  }
+}
+#menu-item {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card{
+  background-color: $navbar-bg-color;
+  transition: 0.4s;
+  &:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+.card-body{
+  background-color: $card-body-bg-color;
+}
+.price {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+// About Us Section
+#about {
+  background-color: $white;
+  padding: 20px;
+}
+#about {
+  h2 {
+    font-size: 24px;
+  }
+}
+#about {
+  p {
+    font-size: 16px;
+  }
+}
+.section-about {
+  background-color: $section-about-bg-color !important;
+  color: $white !important;
+  .row {
+    align-items: center;
+  }
+  .img-box {
+    display: flex;
+    justify-content: center;
+  }
+    img {
+      width: 100%;
+      max-width: 445px;
+      position: relative;
+      z-index: 2;
+      border-radius: 20px;
+    }
+    .detail-box {
+      p {
+        margin-top: 15px;
+        font-size: 20px;
+      }
+    }
+  }
+
+// Our Team Section
+#carouselExampleSlidesOnly {
+  .carousel-inner {
+      .carousel-item {
+          height: 700px; 
+          img {
+              width: 100%; 
+              height: 100%; 
+              object-fit: cover; 
+          }
+      }
+  }
+}
+
+#team {
+  background-color: $white;
+  padding: 20px;
+}
+#team {
+  h2 {
+    font-size: 24px;
+  }
+}
+#team {
+  p {
+    font-size: 16px;
+  }
+}
+
+
+// Contact Us Section
+#contact {
+  background-color: $contact-bg-color ;
+  padding: 20px;
+}
+#contact {
+  h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+#contact {
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+#contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#contact-form {
+  form {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+#contact-form {
+  form {
+    label {
+      font-size: 16px;
+      font-weight: bold;
+      display: block;
+    }
+  }
+}
+#contact-form {
+  form {
+    input {
+      font-size: 16px;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+      border: 1px solid $header-bg-color;
+      border-radius: 5px;
+    }
+  }
+}
+#contact-form {
+  form {
+    textarea {
+      font-size: 16px;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+      border: 1px solid $header-bg-color;
+      border-radius: 5px;
+    }
+  }
+}
+#contact-form {
+  form {
+    button {
+      font-size: 16px;
+      background-color: $navbar-bg-color;
+      color: $white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+}
+#footer {
+  background-color: $footer-color;
+  color: $white;
+  text-align: center;
+  padding: 10px 0;
+}
+#footer {
+  p {
+    font-size: 14px;
+  }
+}
